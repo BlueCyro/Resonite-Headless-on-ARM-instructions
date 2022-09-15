@@ -1,6 +1,6 @@
 # How to build the libraries for ARM 64 bit
 
-Hi! This is a short guide on how to build the native libraries required to run a Neos headless server on `aarch64` (Arm 64 bit) systems! Too long have we waited to fry eggs on our pis (or other assorted ARM chip ~~victims~~), so I took up the challenge of getting these libraries to compile and writing easy-to-follow instructions to do so. If you're omega lazy and don't want to try compiling these (though you may want to depending on what system you're on), you can try a couple pre-compiled variants I'll throw into the releases section of this repo.
+Hi! This is a short guide on how to build the native libraries required to run a Neos headless server on `aarch64` (Arm 64 bit) systems! Too long have we waited to fry eggs on our pis (or other assorted ARM chip ~~victims~~), so I took up the challenge of getting these libraries to compile and writing easy-to-follow instructions to do so. If you're omega lazy and don't want to try compiling these (though you may want to depending on what system you're on), you can try a couple pre-compiled variants I'll throw into the [releases](https://github.com/RileyGuy/Neos-Headless-on-ARM-instructions/releases) section of this repo.
 
 ## Prerequisites:
 Some of these may have varying names depending on your distro's package manager, use your noggin to search for them
