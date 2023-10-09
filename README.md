@@ -24,7 +24,7 @@ __NOTE: When cloning, do `git clone --branch neos-release your://url.here` to ge
 I've hyperlinked the git repos in the table below, so you should just be able to right click -> copy them into the `your://url.here` portion of the command in the note above. I have specifically forked FreeImage and Crunch in order to fix them for ARM
 | Library | Instructions |
 | --- | --- |
-| [FreeImage](https://github.com/RileyGuy/FreeImage) | Simply run `make -jN` in the main directory, the library will end up in the 'Dist' folder of the main directory which you can navigate to by typing `cd Dist`. |
+| [FreeImage](https://github.com/Yellow-Dog-Man/FreeImage) | Edit `Makefile.gnu` and add `-DPNG_ARM_NEON_OPT=0` to the line that starts with `CFLAGS ?=`  as an option. Then run `make -jN` in the main directory, the library will end up in the 'Dist' folder of the main directory which you can navigate to by typing `cd Dist`. |
 | [Crunch](https://github.com/RileyGuy/crunch) | Run `cmake -B build`, then cd into the 'build' directory and run `make -jN`. The library will end up directly in the build directory. |
 | [Freetype](https://github.com/Neos-Metaverse/freetype) | Run `cmake -B build -D BUILD_SHARED_LIBS=true -D CMAKE_BUILD_TYPE=Release`, then cd into the 'build' directory and run `make -jN`. The library will end up directly in the build directory. |
 | [Opus](https://github.com/Neos-Metaverse/opus) | If the `autogen.sh` file isn't executable already, mark is as such with `chmod +x autogen.sh` then run `./autogen.sh` and `./configure`. After that run `make -jN`. The library will be in a hidden directory called '.libs' so you can just type `cd .libs` to find it. |
