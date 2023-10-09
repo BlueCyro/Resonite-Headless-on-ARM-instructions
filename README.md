@@ -44,7 +44,10 @@ Once these steps are complete, you can try firing up the headless by `cd`-ing in
 
 ## Troubleshooting
 
-### Compiler errors
+### Error: unknown mnemonic `int' -- `int $3'
+Make sure to use the proper branch when cloning. If you didn't, you might want to clear out your cloned repos, and reclone the correct branch.
+
+### Other compiler errors
 May god have mercy on your soul. These can be pretty system-specific if you're building this on a pretty out-there processor or system (such as termux on android).
 
 ### DllNotFound errors
