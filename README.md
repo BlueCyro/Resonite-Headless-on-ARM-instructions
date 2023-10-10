@@ -22,7 +22,7 @@ Make sure the following are installed:
 
 __NOTE: When cloning, do `git clone --branch neos-release your://url.here` to get the proper branch!!__
 
-I've hyperlinked the git repos in the table below, so you should just be able to right click -> copy them into the `your://url.here` portion of the command in the note above. I have specifically forked FreeImage and Crunch in order to fix them for ARM
+I've hyperlinked the git repos in the table below, so you should just be able to right click -> copy them into the `your://url.here` portion of the command in the note above. I have specifically forked Crunch in order to fix it for ARM
 | Library | Instructions |
 | --- | --- |
 | [FreeImage](https://github.com/Yellow-Dog-Man/FreeImage) | Edit `Makefile.gnu` and add `-DPNG_ARM_NEON_OPT=0` to the line that starts with `CFLAGS ?=`  as an option. Then run `make -jN` in the main directory, the library will end up in the 'Dist' folder of the main directory which you can navigate to by typing `cd Dist`. |
