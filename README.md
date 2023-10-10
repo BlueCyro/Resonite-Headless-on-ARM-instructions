@@ -1,6 +1,6 @@
 # How to build the libraries for ARM 64 bit
 
-Hi! This is a short guide on how to build the native libraries required to run a Neos headless server on `aarch64` (Arm 64 bit) systems! Too long have we waited to fry eggs on our pis (or other assorted ARM chip ~~victims~~), so I took up the challenge of getting these libraries to compile and writing easy-to-follow instructions to do so. If you're omega lazy and don't want to try compiling these (though you may want to depending on what system you're on), you can try a couple pre-compiled variants I'll throw into the [releases](https://github.com/RileyGuy/Neos-Headless-on-ARM-instructions/releases) section of this repo.
+Hi! This is a short guide on how to build the native libraries required to run a Resonite headless server on `aarch64` (Arm 64 bit) systems! Too long have we waited to fry eggs on our pis (or other assorted ARM chip ~~victims~~), so I took up the challenge of getting these libraries to compile and writing easy-to-follow instructions to do so. If you're omega lazy and don't want to try compiling these (though you may want to depending on what system you're on), you can try a couple pre-compiled variants I'll throw into the [releases](https://github.com/RileyGuy/Resonite-Headless-on-ARM-instructions/releases) section of this repo.
 
 ## Prerequisites:
 Some of these may have varying names depending on your distro's package manager, use your noggin to search for them
@@ -10,9 +10,9 @@ Some of these may have varying names depending on your distro's package manager,
 Make sure the following are installed:
 * clang
 * cmake
-* autoreconf (included with autoconf on debian based)
+* autoreconf **NOTE:** Already included with autoconf on debian-based distributions
 * make
-* libtool (on debian based)
+* libtool **NOTE:** Required on debian-based distributions
 * mono (To run the headless. As of writing this, version `6.12.0.182` works though slightly earlier or later versions may also function)
 
 
@@ -39,9 +39,9 @@ I've hyperlinked the git repos in the table below, so you should just be able to
 
 Once you're done with a build, the library should be in the folder indicated for the instruction you followed. Typically these files will end in `.so`. For example: Opus builds a `libopus.so`, and FreeImage will build a `libfreeimage-x.xx.x.so` where `x` corresponds to the version numbers.
 
-In the main root of the headless folder (the one containing `Neos.exe`) you should see similarly-named files also ending in `.so`. Once you've finished compiling, you're going to want to overwrite these with the versions you compiled. So for example you'd end up renaming `libfreeimage-x.xx.x.so` to `libFreeImage.so` and overwriting the one in the headless folder. Do this for all files.
+In the main root of the headless folder (the one containing `Resonite.exe`) you should see similarly-named files also ending in `.so`. Once you've finished compiling, you're going to want to overwrite these with the versions you compiled. So for example you'd end up renaming `libfreeimage-x.xx.x.so` to `libFreeImage.so` and overwriting the one in the headless folder. Do this for all files.
 
-Once these steps are complete, you can try firing up the headless by `cd`-ing into the directory and typing `mono Neos.exe` from the command line in the headless directory. If it runs, configure your headless as normal.
+Once these steps are complete, you can try firing up the headless by `cd`-ing into the directory and typing `mono Resonite.exe` from the command line in the headless directory. If it runs, configure your headless as normal.
 
 ## Troubleshooting
 
