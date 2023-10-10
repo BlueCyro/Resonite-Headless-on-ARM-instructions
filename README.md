@@ -13,7 +13,7 @@ Make sure the following are installed:
 * autoreconf **NOTE:** Already included with autoconf on debian-based distributions
 * make
 * libtool **NOTE:** Required on debian-based distributions
-* mono (To run the headless. As of writing this, version `6.12.0.182` works though slightly earlier or later versions may also function)
+* mono (To run the headless. As of writing this, version `6.12.0.200` works though slightly earlier or later versions may also function)
 
 
 ## Required libraries
