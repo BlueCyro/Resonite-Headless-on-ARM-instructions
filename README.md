@@ -10,7 +10,7 @@ Some of these may have varying names depending on your distro's package manager,
 Make sure the following are installed:
 * clang
 * cmake
-* autoreconf **NOTE:** Already included with autoconf on debian-based distributions
+* autoreconf **NOTE:** Only in the autoconf package on debian-based distributions
 * make
 * libtool **NOTE:** Required on debian-based distributions
 * mono (To run the headless. As of writing this, version `6.12.0.200` works though slightly earlier or later versions may also function)
